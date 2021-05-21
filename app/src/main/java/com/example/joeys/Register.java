@@ -93,7 +93,6 @@ public class Register extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
 
-
                 String registeremail = email.getText().toString().trim();
                 if (!registeremail.isEmpty()) {
                     em = true;
