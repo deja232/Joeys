@@ -25,7 +25,7 @@ public class account implements Parcelable {
         }
     };
 
-    public String getEmail() {
+    public String getEmailuser() {
         return emailuser;
     }
 
