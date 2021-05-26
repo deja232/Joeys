@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -15,6 +17,7 @@ public class checkout extends AppCompatActivity {
 
     private TextView satu,dua,tiga,empat,lima;
     private int toto;
+    private Button chekot;
     private  ArrayList joey  = new ArrayList();
     Intent intent = new Intent();
 
@@ -29,6 +32,7 @@ public class checkout extends AppCompatActivity {
         tiga = findViewById(R.id.isilama);
         empat = findViewById(R.id.isijen);
         lima = findViewById(R.id.isihar);
+        chekot = findViewById(R.id.button_checkout);
         intent = getIntent();
 
         toto = intent.getIntExtra("IDuser",0);
@@ -39,5 +43,14 @@ public class checkout extends AppCompatActivity {
         tiga.setText((Integer) joey.get(3));
         empat.setText((Integer) joey.get(1));
         lima.setText((Integer) joey.get(0));
+
+        chekot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent tim = new Intent(getBaseContext(),lastpage.class);
+                startActivity(tim);
+                finish();
+            }
+        });
     }
 }
