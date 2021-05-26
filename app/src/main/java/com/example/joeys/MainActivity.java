@@ -194,6 +194,15 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        signuplink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), Register.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 }
