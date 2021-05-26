@@ -4,6 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#242526"
     tools:context=".lastpage">
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="serif-monospace"
+        android:text="Joey's Hotel"
+        android:textAlignment="center"
+        android:textColor="#FDEEF4"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="114dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="44dp"
+        android:text="EST. 2021"
+        android:textAlignment="center"
+        android:textColor="#FDEEF4"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="97dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="156dp"
+        android:text="Indonesia"
+        android:textAlignment="center"
+        android:textColor="#FDEEF4"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 </androidx.constraintlayout.widget.ConstraintLayout>
