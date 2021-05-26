@@ -63,7 +63,7 @@
         android:fontFamily="cursive"
         android:text="Order"
         android:textAlignment="center"
-        android:textColor="#7DF9FF "
+        android:textColor="#FDEEF4"
         android:textSize="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
