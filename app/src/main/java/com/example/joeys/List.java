@@ -8,10 +8,15 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import model.harga;
+import model.kamar;
+
 public class List extends AppCompatActivity {
 
     private ImageView single,doublee,king,sut,psut;
     private TextView s1,d2,k3,s4,ps5;
+    private harga listharga;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +39,8 @@ public class List extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(),form.class);
+                intent.putExtra("harg",listharga.harga1());
+                intent.putExtra("jenis", "Single Bed");
                 startActivity(intent);
                 finish();
             }
@@ -42,6 +49,8 @@ public class List extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(),form.class);
+                intent.putExtra("harg",listharga.harga2());
+                intent.putExtra("jenis", "Double Bed");
                 startActivity(intent);
                 finish();
             }
@@ -50,6 +59,8 @@ public class List extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(),form.class);
+                intent.putExtra("harg",listharga.harga3());
+                intent.putExtra("jenis", "King Size");
                 startActivity(intent);
                 finish();
             }
@@ -58,6 +69,8 @@ public class List extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(),form.class);
+                intent.putExtra("harg",listharga.harga4());
+                intent.putExtra("jenis", "Suite");
                 startActivity(intent);
                 finish();
             }
@@ -66,6 +79,8 @@ public class List extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(),form.class);
+                intent.putExtra("harg",listharga.harga5());
+                intent.putExtra("jenis", "President's Suite");
                 startActivity(intent);
                 finish();
             }
@@ -74,6 +89,8 @@ public class List extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(),form.class);
+                intent.putExtra("harg",listharga.harga1());
+                intent.putExtra("jenis","Single Bed");
                 startActivity(intent);
                 finish();
             }
@@ -82,6 +99,8 @@ public class List extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(),form.class);
+                intent.putExtra("harg",listharga.harga2());
+                intent.putExtra("jenis", "Double Bed");
                 startActivity(intent);
                 finish();
             }
@@ -90,6 +109,8 @@ public class List extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(),form.class);
+                intent.putExtra("harg",listharga.harga3());
+                intent.putExtra("jenis", "Kingsize");
                 startActivity(intent);
                 finish();
             }
@@ -98,6 +119,8 @@ public class List extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(),form.class);
+                intent.putExtra("harg",listharga.harga4());
+                intent.putExtra("jenis", "Suite");
                 startActivity(intent);
                 finish();
             }
@@ -106,6 +129,8 @@ public class List extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(),form.class);
+                intent.putExtra("harg",listharga.harga5());
+                intent.putExtra("jenis", "President's Suite");
                 startActivity(intent);
                 finish();
             }
