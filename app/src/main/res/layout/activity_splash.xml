@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Splash"
-    android:background="@color/dsb">
+    android:background="#242526"
+    tools:context=".Splash">
 
 
     <ImageView
@@ -13,7 +13,7 @@
         android:layout_width="379dp"
         android:layout_height="252dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="120dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/joey" />

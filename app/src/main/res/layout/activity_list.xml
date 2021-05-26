@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".List"
-    android:background="@color/dg">
+    android:background="#242526"
+    tools:context=".List">
 
     <ScrollView
         android:layout_width="match_parent"

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".form"
-    android:background="@color/dg">
+    android:background="#242526"
+    tools:context=".form">
 
     <EditText
         android:id="@+id/stay"
@@ -43,7 +43,7 @@
         android:id="@+id/Submit"
         android:layout_width="114dp"
         android:layout_height="64dp"
-        android:layout_marginStart="240dp"
+        android:layout_marginStart="148dp"
         android:layout_marginTop="156dp"
         android:backgroundTint="@color/pblu"
         android:text="Submit"
@@ -63,7 +63,7 @@
         android:fontFamily="cursive"
         android:text="Order"
         android:textAlignment="center"
-        android:textColor="@color/aqua"
+        android:textColor="#7DF9FF "
         android:textSize="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
