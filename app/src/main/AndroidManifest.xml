@@ -11,7 +11,9 @@
         android:theme="@style/Theme.Joeys">
         <activity android:name=".lastpage"></activity>
         <activity android:name=".Loading" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".checkout" />
+        <activity android:name=".Register" />
         <activity android:name=".form" />
         <activity android:name=".List" />
         <activity android:name=".Splash">
