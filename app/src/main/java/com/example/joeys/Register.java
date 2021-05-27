@@ -32,9 +32,8 @@ public class Register extends AppCompatActivity {
         pass = findViewById(R.id.regis_pword);
         loginlink = findViewById(R.id.loginlink);
         regis = findViewById(R.id.button_register);
+        regis.setEnabled(false);
         final Loadlog loading = new Loadlog(Register.this);
-
-        loginlink.setEnabled(false);
 
         name.addTextChangedListener(new TextWatcher() {
             @Override
@@ -51,7 +50,7 @@ public class Register extends AppCompatActivity {
                     uname = true;
                 }
                 if (em == true && pas == true && uname == true) {
-                    loginlink.setEnabled(true);
+                    regis.setEnabled(true);
                 }
             }
 
@@ -69,13 +68,12 @@ public class Register extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
 
-
                 String registerpass = pass.getText().toString().trim();
                 if (!registerpass.isEmpty()) {
                     pas = true;
                 }
                 if (em == true && pas == true && uname == true) {
-                    loginlink.setEnabled(true);
+                    regis.setEnabled(true);
                 }
             }
 
@@ -98,7 +96,7 @@ public class Register extends AppCompatActivity {
                     em = true;
                 }
                 if (em == true && pas == true && uname == true) {
-                    loginlink.setEnabled(true);
+                    regis.setEnabled(true);
                 }
             }
 
@@ -123,8 +121,9 @@ public class Register extends AppCompatActivity {
                     public void run() {
                         if (!user.isEmpty() && !emaill.isEmpty() && !pword.isEmpty()) {
                             loading.gone();
-                            Intent intent = new Intent();
+                            Intent intent = new Intent(getBaseContext(),MainActivity.class);
                             intent.putExtra("needed",temp);
+                            startActivity(intent);
                             setResult(200,intent);
                             finish();
                             finish();
