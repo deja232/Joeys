@@ -13,6 +13,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+
 import model.account;
 
 public class Register extends AppCompatActivity {
@@ -21,6 +23,7 @@ public class Register extends AppCompatActivity {
     private TextView loginlink;
     private Button regis;
     private boolean em,pas,uname;
+    private static ArrayList <account> list;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +35,7 @@ public class Register extends AppCompatActivity {
         pass = findViewById(R.id.regis_pword);
         loginlink = findViewById(R.id.loginlink);
         regis = findViewById(R.id.button_register);
+        // list = new ArrayList<account>();
         regis.setEnabled(false);
         final Loadlog loading = new Loadlog(Register.this);
 
@@ -123,9 +127,9 @@ public class Register extends AppCompatActivity {
                             loading.gone();
                             Intent intent = new Intent(getBaseContext(),MainActivity.class);
                             intent.putExtra("needed",temp);
+                            list.add(temp);
                             startActivity(intent);
                             setResult(200,intent);
-                            finish();
                             finish();
                         } else {
                             Toast.makeText(getApplicationContext(), "Register Failed, Try Again!", Toast.LENGTH_SHORT).show();

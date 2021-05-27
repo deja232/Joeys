@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private Button button_login;
     private TextView signuplink;
     private Boolean validateEmail , validatePassword = false;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         login_password = findViewById(R.id.login_password);
         button_login = findViewById(R.id.button_login);
         signuplink = findViewById(R.id.signuplink);
+        intent = getIntent();
+
 
         signuplink.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        button_login.setEnabled(false);
+
         button_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
