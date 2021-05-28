@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -65,13 +66,20 @@ public class MainActivity extends AppCompatActivity {
                 if (validateEmail && validatePassword) {
                     for (int i = 0; i <coba.size(); i++) {
                             account tempuser = coba.get(i);
+
+
                         if ((tempuser.getEmailuser().equalsIgnoreCase(email)) && tempuser.getPassword().equalsIgnoreCase(password)) {
                             Intent intent = new Intent(getBaseContext(), List.class);
-                            intent.putExtra("IDuser", tempuser);
+                            Log.d("koreinerganteng", String.valueOf(tempuser));
+                            intent.putExtra("IDuser", tempuser.getNamauser());
                             startActivity(intent);
                             Toast.makeText(getApplicationContext(), "Successfully Login", Toast.LENGTH_SHORT).show();
                             break;
                         } else {
+                            Log.d("koreinerganteng",(tempuser.getEmailuser()));
+                            Log.d("koreinerganteng",(email));
+                            Log.d("koreinerganteng",(tempuser.getPassword()));
+                            Log.d("koreinerganteng", (password));
                             Toast.makeText(getApplicationContext(), "Login Failed, Please Try Again..", Toast.LENGTH_SHORT).show();
                         }
                     }
