@@ -25,6 +25,7 @@ public class Register extends AppCompatActivity {
     private Button regis;
     private boolean em,pas,uname;
     private static ArrayList <account> yey = array.list;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +37,7 @@ public class Register extends AppCompatActivity {
         pass = findViewById(R.id.regis_pword);
         loginlink = findViewById(R.id.loginlink);
         regis = findViewById(R.id.button_register);
-        // list = new ArrayList<account>();
+
         regis.setEnabled(false);
         final Loadlog loading = new Loadlog(Register.this);
 
@@ -119,6 +120,7 @@ public class Register extends AppCompatActivity {
                 String emaill = email.getText().toString().trim();
                 String pword = pass.getText().toString().trim();
                 account temp = new account(user,emaill,pword);
+
                 loading.dialogalert();
                 Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {
@@ -135,7 +137,7 @@ public class Register extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), "Register Failed, Try Again!", Toast.LENGTH_SHORT).show();
                         }
                     }
-                },3000);
+                },2000);
 
             }
         });

@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         button_login = findViewById(R.id.button_login);
         signuplink = findViewById(R.id.signuplink);
         intent = getIntent();
+        intent.getParcelableExtra("needed");
 
 
         signuplink.setOnClickListener(new View.OnClickListener() {
@@ -58,6 +59,9 @@ public class MainActivity extends AppCompatActivity {
                 String email = login_email.getText().toString().trim();
                 String password = login_password.getText().toString().trim();
                 ArrayList<account> coba = array.list;
+                account toto = intent.getParcelableExtra("needed");
+                coba.add(toto);
+
                 if (validateEmail && validatePassword) {
                     for (int i = 0; i <coba.size(); i++) {
                             account tempuser = coba.get(i);
