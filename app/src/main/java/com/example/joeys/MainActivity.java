@@ -51,20 +51,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        button_login.setEnabled(false);
         button_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String email = login_email.getText().toString().trim();
                 String password = login_password.getText().toString().trim();
                 ArrayList<account> coba = array.list;
-                if (validateEmail == true && validatePassword == true) {
+                if (validateEmail && validatePassword) {
                     for (int i = 0; i <coba.size(); i++) {
                             account tempuser = coba.get(i);
                         if ((tempuser.getEmailuser().equalsIgnoreCase(email)) && tempuser.getPassword().equalsIgnoreCase(password)) {
                             Intent intent = new Intent(getBaseContext(), List.class);
                             intent.putExtra("IDuser", tempuser);
-                            finish();
                             startActivity(intent);
                             Toast.makeText(getApplicationContext(), "Successfully Login", Toast.LENGTH_SHORT).show();
                             break;

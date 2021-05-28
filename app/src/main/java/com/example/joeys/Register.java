@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 
 import model.account;
+import model.array;
 
 public class Register extends AppCompatActivity {
 
@@ -23,7 +24,7 @@ public class Register extends AppCompatActivity {
     private TextView loginlink;
     private Button regis;
     private boolean em,pas,uname;
-    private static ArrayList <account> list;
+    private static ArrayList <account> yey = array.list;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -127,9 +128,8 @@ public class Register extends AppCompatActivity {
                             loading.gone();
                             Intent intent = new Intent(getBaseContext(),MainActivity.class);
                             intent.putExtra("needed",temp);
-                            list.add(temp);
+                            yey.add(temp);
                             startActivity(intent);
-                            setResult(200,intent);
                             finish();
                         } else {
                             Toast.makeText(getApplicationContext(), "Register Failed, Try Again!", Toast.LENGTH_SHORT).show();
