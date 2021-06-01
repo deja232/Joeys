@@ -96,9 +96,10 @@ public class form extends AppCompatActivity {
                 Intent go = new Intent(getBaseContext(),checkout.class);
                 ArrayList lol = new ArrayList();
                 lol.add(intent.getIntExtra("harg",0));
-                lol.add(intent.getStringExtra("jenis"));
+                lol.add(intent.getStringExtra("jenis",));
                 lol.add(tanggal);
-                lol.add(tetap);
+                int a = Integer.parseInt(tetap);
+                lol.add(a);
                 go.putParcelableArrayListExtra("data",lol);
                 startActivity(go);
                 finish();
