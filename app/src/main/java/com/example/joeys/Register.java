@@ -130,7 +130,6 @@ public class Register extends AppCompatActivity {
                             loading.gone();
                             Intent intent = new Intent(getBaseContext(),MainActivity.class);
                             intent.putExtra("needed",temp);
-                            yey.add(temp);
                             startActivity(intent);
                             finish();
                         } else {
