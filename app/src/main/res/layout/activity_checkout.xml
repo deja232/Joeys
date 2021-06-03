@@ -53,44 +53,46 @@
                 android:id="@+id/isitang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:textColor="@color/cot"
-                app:layout_constraintEnd_toEndOf="@+id/isinama"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@+id/isinama"
+                app:layout_constraintStart_toEndOf="@+id/tanggal"
                 app:layout_constraintTop_toBottomOf="@+id/isinama" />
 
             <TextView
                 android:id="@+id/isilama"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:textColor="@color/cot"
                 app:layout_constraintEnd_toEndOf="@+id/isitang"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/isitang"
+                app:layout_constraintStart_toEndOf="@+id/stayi"
                 app:layout_constraintTop_toBottomOf="@+id/isitang" />
 
             <TextView
                 android:id="@+id/isijen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
                 android:layout_marginTop="8dp"
                 android:textColor="@color/cot"
                 app:layout_constraintEnd_toEndOf="@+id/isilama"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/isilama"
+                app:layout_constraintStart_toEndOf="@+id/jenis"
                 app:layout_constraintTop_toBottomOf="@+id/isilama" />
 
             <TextView
                 android:id="@+id/isihar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
                 android:layout_marginTop="8dp"
                 android:textColor="@color/cot"
                 app:layout_constraintEnd_toEndOf="@+id/isijen"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/isijen"
+                app:layout_constraintStart_toEndOf="@+id/price"
                 app:layout_constraintTop_toBottomOf="@+id/isijen" />
 
             <TextView
@@ -133,12 +135,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Harga : "
+                android:text="Harga :  Rp."
                 android:textColor="@color/cot"
                 app:layout_constraintEnd_toEndOf="@+id/jenis"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/jenis"
                 app:layout_constraintTop_toBottomOf="@+id/jenis" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Days"
+                android:textColor="@color/cot"
+                app:layout_constraintStart_toEndOf="@+id/isilama"
+                app:layout_constraintTop_toBottomOf="@+id/isitang" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

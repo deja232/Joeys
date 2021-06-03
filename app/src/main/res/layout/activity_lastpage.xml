@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="821dp"
-        android:layout_height="365dp"
+        android:layout_width="933dp"
+        android:layout_height="373dp"
         android:layout_marginTop="32dp"
         android:background="@color/plat"
         app:layout_constraintEnd_toStartOf="@+id/imageView2"

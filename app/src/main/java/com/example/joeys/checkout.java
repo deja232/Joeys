@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -35,17 +36,21 @@ public class checkout extends AppCompatActivity {
         chekot = findViewById(R.id.button_checkout);
         intent = getIntent();
 
+
         toto = intent.getIntExtra("IDuser",0);
         joey = intent.getParcelableArrayListExtra("data");
+
 
         int hargakamar = (int) joey.get(0);
         int lama = (int) joey.get(3) ;
 
         satu.setText(array.list.get(toto).getNamauser());
         dua.setText((String) joey.get(2));
-        tiga.setText((Integer) joey.get(3));
-        empat.setText((Integer) joey.get(1));
-        lima.setText((hargakamar*lama));
+        tiga.setText(String.valueOf(lama));
+        empat.setText((String) joey.get(1));
+        lima.setText(String.valueOf(hargakamar*lama));
+
+
 
         chekot.setOnClickListener(new View.OnClickListener() {
             @Override

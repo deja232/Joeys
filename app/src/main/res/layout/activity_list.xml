@@ -171,13 +171,14 @@
                 android:id="@+id/toolbar"
                 android:layout_width="411dp"
                 android:layout_height="57dp"
-                android:background="@color/dsb"
+                android:background="@color/dg"
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:subtitle="List"
+                app:subtitle="Available Rooms"
+                app:subtitleTextColor="@color/metalic"
                 tools:subtitleTextAppearance="@style/TextAppearance.AppCompat.Medium" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

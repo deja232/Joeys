@@ -5,7 +5,7 @@ import android.os.Parcelable;
 
 public class harga implements Parcelable {
 
-    private int harga1 = 100000,harga2 = 1500000,harga3 = 3000000,harga4 = 6000000,harga5 = 10000000;
+    private int harga1 = 1000000,harga2 = 1500000,harga3 = 3000000,harga4 = 6000000,harga5 = 10000000;
 
     protected harga(Parcel in) {
         harga1 = in.readInt();
