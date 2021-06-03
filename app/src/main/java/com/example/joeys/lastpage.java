@@ -18,7 +18,7 @@ public class lastpage extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(lastpage.this, MainActivity.class);
+                Intent intent = new Intent(lastpage.this, List.class);
                 startActivity(intent);
                 finish();
             }

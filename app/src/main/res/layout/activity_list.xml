@@ -180,6 +180,17 @@
                 app:subtitle="Available Rooms"
                 app:subtitleTextColor="@color/metalic"
                 tools:subtitleTextAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <ImageView
+                android:id="@+id/logout"
+                android:layout_width="45dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/toolbar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_action_out" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

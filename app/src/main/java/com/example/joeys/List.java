@@ -18,6 +18,7 @@ public class List extends AppCompatActivity  {
     private ImageView single,doublee,king,sut,psut;
     private TextView s1,d2,k3,s4,ps5;
     private harga listharga;
+    private  ImageView logout;
 
 
     @Override
@@ -37,6 +38,16 @@ public class List extends AppCompatActivity  {
         k3 = findViewById(R.id.kst);
         s4 = findViewById(R.id.st);
         ps5 = findViewById(R.id.pst);
+        logout = findViewById(R.id.logout);
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent out = new Intent(getBaseContext(),MainActivity.class);
+                startActivity(out);
+                finish();
+            }
+        });
 
         single.setOnClickListener(new View.OnClickListener() {
             @Override
