@@ -98,7 +98,8 @@ public class form extends AppCompatActivity {
                 lol.add(intent.getIntExtra("harg",0));
                 lol.add(intent.getStringExtra("jenis"));
                 lol.add(tanggal);
-                lol.add(tetap);
+                int a = Integer.parseInt(tetap);
+                lol.add(a);
                 go.putParcelableArrayListExtra("data",lol);
                 startActivity(go);
                 finish();

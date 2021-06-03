@@ -119,7 +119,7 @@ public class Register extends AppCompatActivity {
                 String user = name.getText().toString().trim();
                 String emaill = email.getText().toString().trim();
                 String pword = pass.getText().toString().trim();
-                account temp = new account(user,emaill,pword);
+                account temp = new account(emaill,pword,user);
 
                 loading.dialogalert();
                 Handler handler = new Handler();

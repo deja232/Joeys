@@ -39,10 +39,10 @@ public class checkout extends AppCompatActivity {
         joey = intent.getParcelableArrayListExtra("data");
 
         int hargakamar = (int) joey.get(0);
-        int lama = (int) joey.get(3);
+        int lama = (int) joey.get(3) ;
 
         satu.setText(array.list.get(toto).getNamauser());
-        dua.setText((Integer) joey.get(2));
+        dua.setText((String) joey.get(2));
         tiga.setText((Integer) joey.get(3));
         empat.setText((Integer) joey.get(1));
         lima.setText((hargakamar*lama));
