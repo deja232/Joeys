@@ -84,14 +84,15 @@
 
     <android.widget.Button
         android:id="@+id/button_register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_width="279dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="164dp"
         android:background="@drawable/inputted"
         android:text="Register"
         android:textAllCaps="false"
         android:textColor="#0C0C0C"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/regis_pword" />
 
@@ -102,7 +103,9 @@
         android:layout_marginTop="20dp"
         android:text="Already have one? Log in now!"
         android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_register" />
+        app:layout_constraintTop_toBottomOf="@+id/button_register"
+        app:layout_constraintVertical_bias="0.097" />
 </androidx.constraintlayout.widget.ConstraintLayout>
